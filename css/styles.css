@@ -1,0 +1,297 @@
+@import url('https://fonts.googleapis.com/css?family=Bitter');
+
+/*Remove default margin*/
+body{
+	height: 100%;
+    margin: 0;
+	font-family: 'Bitter', serif;
+}
+
+br {
+   display: block;
+   margin: 10px 0;
+}
+
+h1 {
+	color:pink;
+	text-align:center;
+	font-size:45px;
+	padding-top:20px;
+}
+
+p {
+	margin:0;
+	padding: 0;
+}
+
+.heroBanner {
+	width:100%;
+	height:70%;
+}
+
+/*Top navigation bar*/
+.topnav {
+  position: absolute; 
+  left: 0; 
+  right: 0; 
+  margin-left: auto; 
+  margin-right: auto; 
+  margin-top: 35%;
+  width: 90%; /* Need a specific value to work */
+  
+}
+
+.topnav ul {
+	list-style-type: none;
+    margin: 0;
+    padding: 0;
+	text-align:center;
+	margin-top: -50px;
+}
+
+.topnav li {
+    display:inline-block;
+	margin-right:10px;
+}
+
+.topnav a {
+	text-decoration: none;
+	
+	line-height: 70px;
+	text-align:sub;
+	vertical-align:middle;
+	display:block;
+	font-size:30px;
+	color:white;
+	height:80px;
+	width: 300px;
+	background-color:red;
+}
+
+.topnav a:hover {
+	text-decoration: underline;
+	background-color:white;
+	color:red;
+	transition: background 0.2s ease-in-out;
+	transition: color 0.3s ease-in-out;
+}
+
+
+/*Banner image*/
+.banner {
+	height: 70%;
+	width: 100%;
+	position: absolute;
+	margin:0px;
+	z-index:-1;
+	
+	
+	background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#hero_1 {
+	background-image: url("../res/bannerImg_1.jpg");
+}
+#hero_2 {
+	background-image: url("../res/bannerImg_2.jpg");
+}
+#hero_3 {
+	background-image: url("../res/bannerImg_3.jpg");
+}
+
+.hero-text {
+    text-align: center;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+	font-size:90px;
+	transition: font-size 0.2s ease-in-out;
+}
+
+.hero-text a {
+	text-decoration: none;
+	color: white;
+}
+
+.hero-text:hover {
+	font-size:120px;
+	border: 3px solid white;
+}
+
+/*Main Body*/
+#first {
+	margin: 22px auto;
+	width:95%;
+	height:600px;
+	background-color:#5d9f9a;
+}
+#content {
+	margin: 0 35px;
+	width: 70%;
+}
+
+
+
+/*Footer*/
+.bottomLinks {
+	background-color:#4d413b;
+	
+}
+
+.footerLinks {
+	margin: 0px auto; 
+}
+
+.footerLinks a {
+	color:white;
+}
+
+.footerLinks a:hover {
+	color:red;
+}
+
+.footerLinks th {
+	color:#9a9a9a;
+	padding:40px 250px;
+	font-size:25px;
+}
+
+.footerLinks td {
+	width:40px;
+	padding:20px 60px;
+}
+
+#thirdRow {
+	text-align: center;
+	vertical-align: middle;
+}
+
+#downloadLink {
+	width:160px;
+	padding:0px 8px;
+	height:50px;
+	
+}
+
+#downloadLink:hover {
+	cursor: pointer;
+	filter:brightness(200%);
+}
+
+/*Accomodation Styles*/
+
+/*Main Body*/
+#contentPageAccomodation {
+	margin: 22px auto;
+	width:95%;
+	overflow:auto;
+	background-color:#5d9f9a;
+}
+
+/*For listings - 3 in a row*/
+.column {
+	float:left;
+	width:30%;
+
+	margin: 0 auto;
+	padding: 30px;
+}
+
+@media screen and (max-width: 650px) {
+    .column {
+        width: 100%;
+        display: block;
+    }
+}
+
+.card {
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+	border:3px solid black;
+}
+
+.card img {
+	width:40%;
+
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+	
+}
+
+.container {
+	padding: 0 16px;
+	height: 240px;
+	position:relative;
+}
+
+.container h2 {
+	margin:2px;
+}
+
+.container p {
+	line-height:26px;
+}
+
+.button {
+	border: none;
+	outline: 2px;
+	display: inline-block;
+	padding: 8px;
+	margin: 0px 2px 9px 2px;
+	color: white;
+	background-color:red;
+	text-align:center;
+	cursor:pointer;
+	width:60%;
+	font-size:18px;
+	
+	position: absolute;
+	bottom: 2px;
+	left: 50%;
+	transform: translateX(-50%);
+
+}
+.button:hover {
+    background-color: #555;
+}
+
+/*Listings*/
+.listCard {
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+	border:3px solid black;
+}
+
+.listCard img {
+	width: 250px;
+    height: 250px;
+
+	display: block;
+	margin:15px auto;
+	
+	overflow: hidden;
+	
+	    border-radius: 50%;
+    background: #eee no-repeat center;
+    background-size: cover;
+	
+}
+
+.listContainer {
+	padding: 0 16px;
+	height: 290px;
+	position:relative;
+}
+
+.listContainer h2 {
+	margin:12px 6px;
+}
+
+
+.listContainer p {
+	line-height:26px;
+	margin:12px 6px;
+}
