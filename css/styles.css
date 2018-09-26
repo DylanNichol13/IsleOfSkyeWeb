@@ -268,15 +268,17 @@ p {
 .listCard img {
 	width: 250px;
     height: 250px;
+    overflow: hidden;
 
 	display: block;
 	margin:15px auto;
 	
-	overflow: hidden;
-	
-	    border-radius: 50%;
+	position: relative;
+	border-radius: 50%;
     background: #eee no-repeat center;
     background-size: cover;
+	
+	object-fit: cover;
 	
 }
 
