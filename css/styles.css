@@ -1,10 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Bitter');
 
 :root {
-	--col1: #17AEDF; 
-	--col2: #1ABC9C; 
-	--col3: #9B59B6; 
-	--col5: #EDF5E1; 
+	--col1: #42526C;
+	--col2: red;
+	--col3: #4E78A0;
+	--col4: #5971AD;
+	--col5: white;
 }
 
 /*Remove default margin*/
@@ -40,14 +41,14 @@ p {
 
 /*Top navigation bar*/
 .topnav {
-  position: absolute; 
-  left: 0; 
-  right: 0; 
-  margin-left: auto; 
-  margin-right: auto; 
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
   margin-top: 34vw;
   width: 90vw; /* Need a specific value to work */
-  
+
 }
 
 .topnav ul {
@@ -65,7 +66,7 @@ p {
 
 .topnav a {
 	text-decoration: none;
-	
+
 	line-height: 5vw;
 	text-align:sub;
 	vertical-align:middle;
@@ -95,11 +96,11 @@ p {
 	position: absolute;
 	margin:0px;
 	z-index:-1;
-	
-	
+
+
 	background-position: center top;
-    background-repeat: no-repeat;
-    background-size: cover;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 #hero_1 {
@@ -119,7 +120,7 @@ p {
     left: 50%;
 	border: 3px solid var(--col5);
     transform: translate(-50%, -50%);
-    
+
 	font-size:6vw;
 	transition: font-size 0.2s ease-in-out;
 }
@@ -127,7 +128,7 @@ p {
 .hero-text a {
 	text-decoration: none;
 	color: var(--col5);
-	
+
 }
 
 .hero-text:hover {
@@ -140,7 +141,7 @@ p {
 	margin: 2vw auto;
 	width:95vw;
 	overflow:auto;
-	
+
 	background-color:var(--col3);
 }
 
@@ -179,11 +180,11 @@ p {
 	overflow-x: auto;
 	background-color:var(--col1);
 	width:100%;
-	
+
 }
 
 .footerLinks {
-	margin: 0px auto; 
+	margin: 0px auto;
 	overflow:auto;
 }
 
@@ -218,7 +219,7 @@ p {
 	width:160px;
 	padding:0px 8px;
 	height:50px;
-	
+
 }
 
 #downloadLink:hover {
@@ -233,7 +234,7 @@ p {
 	margin: 22px auto;
 	width:95%;
 	overflow:auto;
-	background-color:#5d9f9a;
+	background-color:var(--col3);
 }
 
 /*For listings - 3 in a row*/
@@ -257,7 +258,7 @@ p {
 .card {
 	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 	border:3px solid var(--col5);
-	background-color:var(--col3);
+	background-color:var(--col4);
 }
 
 .card img {
@@ -270,7 +271,7 @@ p {
 
 .container {
 	padding: 0 16px;
-	
+
 	height: 30%;
 	position:relative;
 }
@@ -297,7 +298,7 @@ p {
 	cursor:pointer;
 	width:60%;
 	font-size:1vw;
-	
+
 	position: absolute;
 	bottom: 2px;
 	left: 50%;
@@ -312,7 +313,6 @@ p {
 .listCard {
 	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 	border:3px solid var(--col5);
-	background-color: var(--col3);
 }
 
 .listCard img {
@@ -322,20 +322,20 @@ p {
 
 	display: block;
 	margin:15px auto;
-	
+
 	position: relative;
 	border-radius: 50%;
     background: #eee no-repeat center;
     background-size: cover;
-	
+
 	object-fit: cover;
-	
+
 }
 
 .listContainer {
 	padding: 0 16px;
 	height: 22vw;
-	
+
 	position:relative;
 }
 
@@ -355,22 +355,24 @@ p {
 #activityOdd {
 	width: 90%;
 	height: 40%;
-	
+
 	margin: 4vw auto;
 
 	position:relative;
-	
+
+	border:5px solid white;
+
 	transition: background 0.5s ease-in-out;
-	
-	background-color: var(--col3);
+
+	background-color: var(--col4);
 }
 
 #activityOdd:hover {
 	background-color:white;
-	
+
 	transition: background 0.2s ease-in-out;
-	
-	cursor:pointer;	
+
+	cursor:pointer;
 }
 
 #activityOdd:hover img {
@@ -379,12 +381,12 @@ p {
 
 #activityOdd img {
 	height:14vw;
-	
+
 	position: absolute;
-	
+
 	left: 23%;
 	top: 50%;
-	
+
 	transform: translate(-50%, -50%);
 }
 
@@ -396,18 +398,18 @@ p {
 
 #activityTextOdd p{
 	width:80%;
-		
+
 	margin:5% 0.8vw;
-	
+
 	font-size:1vw;
 }
 
-#activityTextOdd {	
+#activityTextOdd {
 	height:14vw;
 	width:55%;
 
-	position: absolute;	
-	
+	position: absolute;
+
 	right:1%;
 	top: 10%
 }
@@ -417,21 +419,21 @@ p {
 #activityEven {
 	width: 90%;
 	height: 40%;
-	
+
 	margin: 4vw auto;
 
 	position:relative;
-	
+	border:5px solid white;
 	transition: background 0.5s ease-in-out;
-	
-	background-color: var(--col3);
+
+	background-color: var(--col4);
 }
 
 #activityEven:hover {
 	background-color:white;
-	
+
 	transition: background 0.2s ease-in-out;
-	
+
 	cursor:pointer;
 }
 
@@ -442,12 +444,12 @@ p {
 
 #activityEven img {
 	height:14vw;
-	
+
 	position: absolute;
-	
+
 	left: 77%;
 	top: 50%;
-	
+
 	transform: translate(-50%, -50%);
 }
 
@@ -459,19 +461,19 @@ p {
 
 #activityTextEven p{
 	width:80%;
-		
+
 	margin:5% 0.8vw;
-	
+
 	font-size:1vw;
 }
 
-#activityTextEven {	
+#activityTextEven {
 	height:14vw;
 	width:55%;
 
-	position: absolute;	
-	
-	
+	position: absolute;
+
+
 	left: 1%;
 	top: 10%
 }
